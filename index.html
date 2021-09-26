@@ -6,20 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Stack Session</title>
   <style>
-   .background{
-     background-color: aqua;
-     box-sizing: border-box;
-     width: 250px;
-     height: 250px;
-     padding: 50px;
-     margin: 50px;
-   }
-   /* always specify box-sizing:box-border, to avoid overflow of the content and the container */
+    /* ALWAYS USE THIS */
+    *{
+      box-sizing: border-box;
+      padding: 0px;
+      margin: 0px;
+    }
+    /* .background{
+      background-color: aqua;
+      height: 25vh;
+      width: 50vw;
+    } */
+    .parent{
+      background-color: aqua;
+      height: 100px;
+      width: 250px;
+      padding: 20px;
+      margin: 20px;
+    }
+    .child{
+      background-color:burlywood;
+      height: 25px;
+      width: 100%;
+      padding: 20px;
+    }
   </style>
+  <head>
   </head>
   <body>
-    <div class="background">
-       <h1> lorem </h1>
+    <!--<div class="background"></div>-->
+    <div class="parent">
+       <div class="child"></div>
     </div>
   </body>
  </html>
+ <!-- % is relative unit
+      px is absolute unit
+      vh & vw are relative unit -->
