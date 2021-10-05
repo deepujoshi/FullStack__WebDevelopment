@@ -17,17 +17,18 @@
       display: flex;
       position: relative; 
       flex-direction: row;
-      justify-content: center; /*only this aligns elements in primary-axix*/
-       /* align-items: center; aligns elements in secondary axixs */
-       /* USING BOTH ALIGNS THE ELEMENT TO THE CENTER OF THE PAGE */
-       align-items: flex-end;/*item will be at bottom of flexBox*/
-       align-items: flex-start;/*itlem will be at top of flexbox*/
-        
+      /* justify-content: center; 
+      align-items: flex-start; */
+      /* flex-wrap: wrap; */
+      justify-content:space-between;
+      flex-wrap: wrap;/*ELEMENTS WONT SHRINK, INSTEAD GO TO NEXT LINE
+      /* flex-wrap: wrap-reverse; TOTALLY FLIPS THE ELEMENTS */
+    /* align-items: stretch;dont give height, instead change to min-height, So this property will work */
       }
     .child{
       background-color: chartreuse;
-      height:150px;
-      width: 100px;
+     height:150px;
+      width: 200px;
       margin: 10px;     
     }
 
@@ -38,7 +39,16 @@
        <div class="child"></div>
        <div style ="background-color: brown;" class="child"></div>
        <div style ="background-color:cornflowerblue"; class="child"></div>
- </div>
-  </body>
+       <div class="child"></div>
+       <div style ="background-color: brown;" class="child"></div>
+       <div style ="background-color:cornflowerblue"; class="child"></div>
+       <div class="child"></div>
+       <div style ="background-color: brown;" class="child"></div>
+       <div style ="background-color:cornflowerblue"; class="child"></div>
+       <div class="child"></div>
+       <div style ="background-color: brown;" class="child"></div>
+       <div style ="background-color:cornflowerblue"; class="child"></div>
+    </div>   
+</body>
 
 </html>
