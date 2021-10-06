@@ -11,44 +11,34 @@
       margin: 0;
       box-sizing: border-box;
       }
-      h2{
-        background-color: red;
-        /* PSEUDO SELECTORS */
-      }
-      h2:hover{
-        font-size: 2rem;
-        background-color: aqua;
-        cursor: pointer;
-      }
-      div::selection{
-        background-color: blueviolet;
-
-      }
-      input:focus{
-        cursor: progress;
-        font-size: 3rem;
-        background-color: pink;
-        color: rebeccapurple;
-      }
-      /* PSEUDO BEFORE AND AFTER SELECTORS */
-      h2::after{
-        content: "I'm after";
-        color: black;
-        position: relative;
-        font-size: 1rem;
-      }
-      h2::before{
-        content: "I'm before";
-        color: black;
-        position: relative;
-        font-size: 1rem;
-      }
+     div.parent{
+       background-color: black;
+       min-height: 200px;
+     }
+     div.child{
+       background-color: chartreuse;
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+       /* transition-duration: 2.5s;
+       transition-timing-function: ease-out;
+       transition-delay: 2s; */
+       /* SHORTHAND */
+       transition: 0.5s ease-in 1s;
+     }
+     div.parent:hover div.child{
+       background-color:red;
+       /* transform: rotateY(180deg); */
+       /* transform: scale(0.5); */
+       transform: translateX(500px);
+       
+     }
   </style>
   </head>
   <body>
-    <h2>Heading Two</h2>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores. Ipsa impedit nisi officiis voluptatem suscipit, modi nam doloribus aliquid dolorum recusandae ipsam quas quidem quod, perspiciatis nemo qui quos?</div>
-    <input type="" />
+   <div class="parent">
+     <div class="child"></div>
+    </div>
  
 </body>
 
