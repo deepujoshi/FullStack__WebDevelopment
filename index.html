@@ -12,31 +12,21 @@
       box-sizing: border-box;
       
     }
-    .background{
-      color: bisque;
-    }
-    h1.background{
-      background-color: black;
-    }
-    h2.background{
-      background-color: blue;
-    }
-    h3.background{    /*combined Selectors*/
-      background-color:chartreuse
-    }
-    div.background#unique{   /*3 combined selectors*/
-      background-color: darkgoldenrod;
-    
-      
-    }
+   /* div.parent div:last-child{ */
+    /* div.parent div:first-child{ */
+      div.parent div:nth-child(3){
+     background-color: lime;
+   }
     
   </style>
   </head>
   <body>
-    <h1 class="background">Heading one</h1>
-    <h2 class="background">Heading Two</h2>
-    <h3 class="background">Heading three</h3> 
-    <div id="unique"class="background">Heading Two</div>  
+   <div class="parent">
+     <div>I'm a div</div>
+     <div>I'm heading</div>
+     
+     <div>I'm div again</div>
+   </div>
 </body>
 
 </html>
