@@ -7,26 +7,49 @@
   <title>Positioning</title>
   <style>
     * {
-      padding: 0;
+      padding: 10px;
       margin: 0;
       box-sizing: border-box;
-      
-    }
-   /* div.parent div:last-child{ */
-    /* div.parent div:first-child{ */
-      div.parent div:nth-child(3){
-     background-color: lime;
-   }
-    
+      }
+      h2{
+        background-color: red;
+        /* PSEUDO SELECTORS */
+      }
+      h2:hover{
+        font-size: 2rem;
+        background-color: aqua;
+        cursor: pointer;
+      }
+      div::selection{
+        background-color: blueviolet;
+
+      }
+      input:focus{
+        cursor: progress;
+        font-size: 3rem;
+        background-color: pink;
+        color: rebeccapurple;
+      }
+      /* PSEUDO BEFORE AND AFTER SELECTORS */
+      h2::after{
+        content: "I'm after";
+        color: black;
+        position: relative;
+        font-size: 1rem;
+      }
+      h2::before{
+        content: "I'm before";
+        color: black;
+        position: relative;
+        font-size: 1rem;
+      }
   </style>
   </head>
   <body>
-   <div class="parent">
-     <div>I'm a div</div>
-     <div>I'm heading</div>
-     
-     <div>I'm div again</div>
-   </div>
+    <h2>Heading Two</h2>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores. Ipsa impedit nisi officiis voluptatem suscipit, modi nam doloribus aliquid dolorum recusandae ipsam quas quidem quod, perspiciatis nemo qui quos?</div>
+    <input type="" />
+ 
 </body>
 
 </html>
