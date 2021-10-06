@@ -10,45 +10,33 @@
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      
     }
-    .parent{
-      min-height: 500PX;
+    .background{
+      color: bisque;
+    }
+    h1.background{
       background-color: black;
-      display: flex;
-      position: relative; 
-      flex-direction: row;
-      /* justify-content: center; 
-      align-items: flex-start; */
-      /* flex-wrap: wrap; */
-      justify-content:space-between;
-      flex-wrap: wrap;/*ELEMENTS WONT SHRINK, INSTEAD GO TO NEXT LINE
-      /* flex-wrap: wrap-reverse; TOTALLY FLIPS THE ELEMENTS */
-    /* align-items: stretch;dont give height, instead change to min-height, So this property will work */
-      }
-    .child{
-      background-color: chartreuse;
-     height:150px;
-      width: 200px;
-      margin: 10px;     
     }
-
+    h2.background{
+      background-color: blue;
+    }
+    h3.background{    /*combined Selectors*/
+      background-color:chartreuse
+    }
+    div.background#unique{   /*3 combined selectors*/
+      background-color: darkgoldenrod;
+    
+      
+    }
+    
   </style>
   </head>
   <body>
-    <div class="parent">
-       <div class="child"></div>
-       <div style ="background-color: brown;" class="child"></div>
-       <div style ="background-color:cornflowerblue"; class="child"></div>
-       <div class="child"></div>
-       <div style ="background-color: brown;" class="child"></div>
-       <div style ="background-color:cornflowerblue"; class="child"></div>
-       <div class="child"></div>
-       <div style ="background-color: brown;" class="child"></div>
-       <div style ="background-color:cornflowerblue"; class="child"></div>
-       <div class="child"></div>
-       <div style ="background-color: brown;" class="child"></div>
-       <div style ="background-color:cornflowerblue"; class="child"></div>
-    </div>   
+    <h1 class="background">Heading one</h1>
+    <h2 class="background">Heading Two</h2>
+    <h3 class="background">Heading three</h3> 
+    <div id="unique"class="background">Heading Two</div>  
 </body>
 
 </html>
