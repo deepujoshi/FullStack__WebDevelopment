@@ -4,66 +4,36 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Positioning</title>
+  <title>TODO List</title>
+  <!-- <link rel="stylesheet" href="./assets/CSS/style.css"> -->
   <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
+    .parent{
+      background-color: orange;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      height: 300px;
+    }
+    .child{
+      background-color: black;
+      width: 100px;
+      height: 100px;      
+      opacity: 1;
+      transition: 1s ease;
+    }
+      .parent:hover .child{
+        /* display: block; -- NOT USED THIS IN TODO LIST(INSTEAD USED IS:) */
+        opacity: 0;
+        /* visibility: hidden; SAME HAS OPACITY */
       }
-     div.parent{
-       background-color: black;
-       min-height: 500px;
-     }
-     div.child{
-       background-color: chartreuse;
-       height: 100px;
-       width: 100px;
-       border-radius: 50%;
-       animation: 1s move ease;
-       animation-fill-mode: forwards;
-       animation-iteration-count: infinite;
-       animation-direction: alternate;
-     }
-     div.child-2{
-       background-color: chartreuse;
-       height: 100px;
-       width: 100px;
-       margin: 10px;
-       border-radius: 50%;
-       animation: 1s move ease;
-       animation-fill-mode: forwards;
-       animation-iteration-count: infinite;
-       animation-direction: alternate;
-       animation-delay: 1s;
-     }
-     /* div.parent:hover div.child{
-       animation: 1s move ease;
-       animation-fill-mode: forwards; */
-         
-     
-     /* TO ADD ANIMATIONS */
-     @keyframes move {
-       0%{
-         transform: translateY(0vw);
-       }
-       50%{
-         transform: translate(500px, 300px);
-         background-color: aqua;
-       }
-       100%{
-         transform: translateY(400px);
-         background-color: blueviolet;
-       }
-       
-     }
   </style>
   </head>
   <body>
-   <div class="parent">
-     <div class="child"></div>
-     <div class="child-2"></div>
-    </div>
+  <div class="parent">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur libero natus ex nam, sequi quod quos. Eum a magni inventore excepturi eaque in molestias? Doloremque placeat voluptas molestias velit!
+    <div class="child"></div>
+  </div>
+  
  
 </body>
 
