@@ -1,14 +1,13 @@
 var heading = document.getElementById("heading")
-var para = document.getElementsByClassName("para")
-var tag = document.getElementsByTagName("a")
-var query = document.querySelector("#heading")
-var query1 = document.querySelector(".para")
-console.log(para.length)
-console.log(para[0])
-console.log(para[1])
-console.log(heading)
-console.log(tag)
-console.log(query)
-console.log(query1)
+var body = document.querySelector('body')
 
-// para.push("deepu")
+
+
+heading.innerHTML = " I was added by JS"
+heading.style = "color:red ; font-size : 2rem;"
+
+heading.classList.add('five')
+heading.classList.remove('one')
+
+// body.classList.add('dark')
+body.classList.remove('dark')
