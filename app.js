@@ -1,14 +1,15 @@
-var arr = ['go to GYM', 'eat food' , 'clean house']
-// for (var i=0 ; i<arr.length; i++){
-//   console.log(arr[i])
-// }
-            // CALLBACKFUNCTION 
-// var callbackfunction = (element , mystery) =>{
-//   console.log(element , mystery)
-// }
-// arr.forEach(callbackfunction)
+var button = document.querySelector('button')
+var input = document.querySelector('input')
+var list = document.querySelector('ul')
 
-           // can be used like this also
-arr.forEach((element , index) => {
-  console.log(element,index)
-})
+const callbackfunc = (event) => {
+  // // console.log(event.target)
+  // console.log(input.value)
+  const inputValue = input.value
+  const element = document.createElement('li')
+  const node = document.createTextNode(input.value)
+  element.appendChild(node)
+  list.appendChild(element)
+}
+
+button.addEventListener('click', callbackfunc)
