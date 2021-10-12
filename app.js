@@ -1,34 +1,14 @@
-// ARROW FUNCTIONS
-// Its just replacing "function" keyword with "=>"
-
-// var add = (a=0,b=0) => {
-//   var sum = a + b
-//   return sum
+var arr = ['go to GYM', 'eat food' , 'clean house']
+// for (var i=0 ; i<arr.length; i++){
+//   console.log(arr[i])
 // }
-// console.log(add(10,20))
-
-// can use like this
-var add = (a=0,b=0) => {
-  return a + b
-}
-console.log(add(10,20))
-
-// can be used like this also
-var add = (a=0,b=0) => a + b
-console.log(add(10,20))
-
-
-// Arrow Function example
-// const greet = (Name) => {
-//   return 'hi ' + Name
+            // CALLBACKFUNCTION 
+// var callbackfunction = (element , mystery) =>{
+//   console.log(element , mystery)
 // }
-// console.log(greet('Deepthi'))
+// arr.forEach(callbackfunction)
 
-        // OR
-// if we just have one parameter USE LIKE THIS
-
-const greet = Name =>'hi ' + Name
-
-console.log(greet('Deepu'))
-
-      
+           // can be used like this also
+arr.forEach((element , index) => {
+  console.log(element,index)
+})
