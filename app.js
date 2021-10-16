@@ -1,74 +1,21 @@
-const a = document.querySelectorAll('input')[0]
-const b = document.querySelectorAll('input')[1]
-const add = document.querySelector("#add")
-const sub = document.querySelector("#sub")
-const multiply = document.querySelector('#multiply')
-const resultBox = document.querySelector('.result')
+    // ARRAY METHODS
 
-// console.log(a ,b)
-// console.log(add ,multiply)
-// console.log(result)
-              //  TO ADD NUMBERS
-// const sum =() => {
-//   const result = parseInt(a.value) + parseInt(b.value)
-//   resultBox.innerHTML = result
-//   // resultBox.textContent = result // can be used like this also
+// var arr=[1,2,3,4,5]
 
-// }
-// add.addEventListener('click' , sum)
+// arr.push(6)
+// arr.unshift(6)
+// arr.shift()
+// arr.slice(2 ,4) // wont work like this instead use:
+// var new_arr=arr.slice(2,4)
 
-//               // TO MULTIPLY NUMBERS
-// const product =() => {
-//   const result = parseInt(a.value) *  parseInt(b.value)
-//   resultBox.innerHTML = result
-//   // resultBox.textContent = result // can be used like this also
+var arr =[1,2,3,4,5,6,7,8]
+// var new_arr = arr.filter((element , index) => {
+//     if (element % 2 == 0) return true 
+// })
+// console.log(new_arr)
 
-// }
-// multiply.addEventListener('click' , product)
-                //  ABOVE CODE TAKES ALOT OF CODE LINE
-
-                // USING BELOW CODE REDUCES THE LONES OF CODE
-const calculate = (event , operation) => {
-  // console.log(event.target)
-  // if (operation == 'add'){
-  //   console.log('adding')
-  // }else if (operation == 'multiply'){
-  //   console.log('multiply')
-              // IF-ELSE IS MORE COMPLEX
-               
-              // SWITCH BETTER WAY TO USE
-  switch (operation) {
-    case "add":
-      resultBox.innerHTML = parseInt(a.value) + parseInt(b.value)
-      break;
-    case "multiply":
-      resultBox.innerHTML = parseInt(a.value) *  parseInt(b.value)
-      break;
-    case "sub":
-      resultBox.innerHTML = parseInt(a.value) -  parseInt(b.value)
-      break;
-  }
-  }
-
-
-add.addEventListener('click' , (event) =>{
-  // return calculate('add')// same
-   calculate(event , 'add')
-
-})
-
-multiply.addEventListener('click', (event) =>{
- calculate(event , 'multiply')
-  // return calculate('multiply') // same
-
-})
-sub.addEventListener('click', (event) =>{
-  calculate(event , 'sub')
-   // return calculate('sub') // same
- 
- })
-
-
-
+// arr.splice(3,1)
+arr.splice(3,3)
+console.log(arr)
 
 
