@@ -1,24 +1,34 @@
-// 'let' and 'var' 
-     
-// let is a block scope
-// var is a global scope
 
-// if (true){
-//     let Name = 'Ferrari'
-//     console.log(Name)
+// console.log(this)
+// console.log(this.alert('HII'))
+
+// let car ={
+//     Name:'C Class' ,
+//     Manufacturer: 'Mercedes' ,
+//     print:function (a){
+//         console.log(a)
 //     }
-
-// for(var i=0;i<10;i++){
-//     }
-// console.log(i)   //OUTPUT COMES
-
-// for(let i=0;i<10;i++){
 // }
-// console.log(i) // OUTPUT ERROR
+// console.log(car)
 
-if (true){
-    var Name = 'Ferrari'
-        if (true){
-            console.log(Name)
-        }
-    }   
+// let car ={
+//         Name:'C Class' ,
+//         Manufacturer: 'Mercedes' ,
+//         print:function (){
+//             console.log(this)
+//         }
+//     }
+//     car.print()
+
+let car ={
+            Name:'C Class' ,
+            Manufacturer: 'Mercedes' ,
+            print:function (){
+                console.log(this.Name + ' was manufactured by ' + this.Manufacturer)
+                
+                            // ES6--Template String
+                            // Better way to use it
+                console.log(`${this.Name} was created by ${this.Manufacturer}`)
+            }
+        }   
+        car.print()
