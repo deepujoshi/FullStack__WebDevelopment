@@ -1,17 +1,17 @@
-let valve = new Promise((resolve , reject) => {
-  setTimeout( () =>{
-    resolve('hello')
-  }, 3000)
-})
-console.log(valve)
+// let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => {
+//   let pasrseData = res.json()
+//   console.log(pasrseData)
+  
+// })
 
-setTimeout( () => {
-  console.log(valve)
-} ,4000)
-<<<<<<< HEAD
-=======
-// function greet{
-//   console.log('Hello Whats Up')
-// }
-// greet()
->>>>>>> a1fe574cca32dae68d89c6dfa79609ad5a0ec118
+let response = fetch('https://jsonplaceholder.typicode.com/users').then(res => res.json()).then(data => {
+  console.log(data)
+})
+
+// console.log(response)
+
+// setTimeout( () => {
+//   console.log(response)
+  
+//   console.log(data)
+// },3000)
