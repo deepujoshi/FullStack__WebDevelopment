@@ -1,2 +1,4 @@
-var data = fetch('https://jsonplaceholder.typicode.com/todos/10')
-console.log(data)
+function greet{
+  console.log('Hello Whats Up')
+}
+greet()
