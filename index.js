@@ -1,12 +1,6 @@
-// for (var i=0;i<10;i++)
-// console.log('iteration',i+1)
-// console.log(window) //   WILL GET AN ERROR
+const{add,sub,multiple,divide} = require('./app')
 
-// setTimeout( () =>{
-//   console.log('hii')
-// }, 5000)
-
-const greet = () => 'hii'
-module.exports.greet = greet
-console.log(module)
-
+add()
+sub()
+multiple()
+divide()
