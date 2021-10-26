@@ -1,20 +1,4 @@
-const input = document.querySelector('input')
-const button = document.querySelector('button')
-const div = document.querySelector('div')
+const path = require('path')
 
-// div.innerHTML = localStorage.getItem('InputValue')
-// button.addEventListener('click' , (req , res) => {
-//   localStorage.setItem('InputValue', input.value)
-//   div.innerHTML = input.value
-// })
-
-// localStorage.setItem('InputValue', "something")
-// console.log(localStorage.getItem("InputValue"))
-
-
-// ------------STRIGNGIFY METHOD ------------------
-const arr = [1, 2, 3, 4,5]
-
-localStorage.setItem('val' , JSON.stringify(arr))
-
-console.log(JSON.parse(localStorage.getItem('val')))
+// console.log(path.resolve('./index.js'))
+console.log(path.relative('../','./temp/app.js'))   //create afolder name temp then moved the app.js  and then excuted this :)
