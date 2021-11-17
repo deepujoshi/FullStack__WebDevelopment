@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\GIT"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FSWD_Internship"
+	}
+}
